@@ -26,8 +26,6 @@
     height: 500px;
   }
   .opinion {
-    background-color: #181f2a;
-    color: white;
     padding: 1em 0 20em 0;
   }
   .opinion__content {
