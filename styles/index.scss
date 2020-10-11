@@ -1,0 +1,43 @@
+@import "./partials/variables";
+@import "./partials/button";
+@import "./layout/intro";
+@import "./layout/features";
+@import "./layout/productive";
+@import "./layout/opinion";
+@import "./layout/access";
+@import "./layout/footer";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.intro {
+    @extend .intro;
+}
+
+.features {
+    @extend .features;
+}
+
+.productive {
+    @extend .productive;
+}
+
+.opinion {
+    @extend .opinion;
+}
+
+.access {
+    @extend .access;
+}
+
+.footer {
+    @extend .footer;
+}

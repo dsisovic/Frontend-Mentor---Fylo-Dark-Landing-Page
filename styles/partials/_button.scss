@@ -1,0 +1,11 @@
+.button {
+    width: 15em;
+    height: 3em;
+    margin: 2em auto 0 auto;
+    border: none;
+    border-radius: 50px;
+    background: $button;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}

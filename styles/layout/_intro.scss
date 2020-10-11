@@ -1,0 +1,58 @@
+.intro {
+    min-height: 800px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    background: $introColor url("../images/bg-curvy-desktop.svg") left bottom no-repeat;
+    background-size: 100%;
+    padding-bottom: 280px;
+
+    .navbar {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2em 4em;
+
+        &__link {
+            a {
+                text-decoration: none;
+                color: white;
+                margin: 0 2em;
+
+                &:hover {
+                    border-bottom: 1px solid white;
+                }
+            }
+        }
+    }
+
+    &__img {
+        display: block;
+        margin: 0 auto;
+        width: 550px;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        color: white;
+
+        h1 {
+            padding: 1em 0;
+            font-size: 1.8rem;
+            line-height: 1.5em;
+        }
+
+        p {
+            line-height: 1.5em;
+            font-size: 1rem;
+        }
+
+        button {
+            @extend .button;
+        }
+    }
+}

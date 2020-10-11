@@ -1,0 +1,33 @@
+.features {
+    background-color: $mainColor;
+
+    &__content {
+        width: 70%;
+        margin: 0 auto;
+        display: grid;
+        grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+        gap: 10em;
+        justify-items: center;
+        align-items: center;
+
+        text-align: center;
+        position: relative;
+        top: -100px;
+    }
+
+    &__box {
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        h3 {
+            padding: 1em 0;
+        }
+
+        p {
+            font-size: .8rem;
+        }
+    }
+}
