@@ -1,0 +1,87 @@
+@import "../partials/variables";
+
+@media only screen and (max-width: $media-query-md) {
+    html,
+    body {
+        font-size: 12px;
+    }
+
+    .intro {
+        padding-bottom: 180px;
+
+        .navbar {
+            padding: 2em 1em;
+
+            &__logo {
+                width: 100px;
+            }
+
+            &__link {
+                a {
+                    margin: 0 0.5em;
+                }
+            }
+        }
+
+        &__img {
+            width: 100%;
+        }
+    }
+
+    .features {
+        &__content {
+            width: 100%;
+            grid-template: repeat(4, 1fr) / 1fr;
+            column-gap: 0;
+        }
+    }
+
+    .productive {
+        padding-top: 0;
+
+        &__wrapper {
+            grid-template: repeat(2, 1fr) / 1fr;
+        }
+
+        &__img {
+            height: 200px;
+        }
+
+        &__content {
+            padding-top: 0;
+        }
+    }
+
+    .opinion {
+        padding: 1em 0 15em 0;
+
+        &__content {
+            grid-template: repeat(3, 1fr) / 1fr;
+            row-gap: 30px;
+        }
+    }
+
+    .access {
+        padding: 1em;
+
+        &__starter {
+            flex-direction: column;
+
+            input[type="email"] {
+                margin: 0 0 1em 0;
+            }
+        }
+    }
+
+    .footer {
+        padding: 200px 0 0 0;
+
+        &__content {
+            grid-template: repeat(4, 1fr) / 1fr;
+        }
+
+        &__section {
+            height: auto;
+        }
+    }
+}

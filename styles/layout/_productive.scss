@@ -1,57 +1,57 @@
 .productive {
     background-color: $mainColor;
-color: white;
-padding-top: 5em;
+    color: white;
+    padding-top: 5em;
 
-&__content {
-    width: 80%;
-    margin: 0 auto;
-    display: grid;
-    grid-template: 1fr / repeat(2, 1fr);
-    column-gap: 5em;
-}
-
-&__right-content {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-
-    h1 {
-        font-size: 2.2rem;
+    &__wrapper {
+        width: 80%;
+        margin: 0 auto;
+        display: grid;
+        grid-template: 1fr / repeat(2, 1fr);
+        column-gap: 5em;
     }
 
-    p {
-        margin: 1em 0;
-    }
-
-    &--href {
+    &__content {
         display: flex;
-        align-items: center;
+        flex-direction: column;
+        text-align: left;
 
-        a {
-            color: $button;
-            text-decoration: none;
-            position: relative;
+        h1 {
+            font-size: 2.2rem;
+        }
 
-            &::after {
-                content: '';
-                position: absolute;
-                left: 0;
-                right: 0;
-                bottom: -5px;
-                height: 1px;
-                width: 115%;
-                background: $button;
+        p {
+            margin: 1em 0;
+        }
+
+        &--href {
+            display: flex;
+            align-items: center;
+
+            a {
+                color: $button;
+                text-decoration: none;
+                position: relative;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    bottom: -5px;
+                    height: 1px;
+                    width: 115%;
+                    background: $button;
+                }
+            }
+
+            img {
+                padding-left: 5px;
             }
         }
-
-        img {
-            padding-left: 5px;
-        }
     }
-}
 
-&__img {
-    width: 600px;
-}
+    &__img {
+        width: 600px;
+    }
 }

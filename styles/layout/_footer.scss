@@ -2,7 +2,7 @@
     background: $footer;
     min-height: 38em;
     position: relative;
-    padding-top: 200px;
+    padding: 200px 0 100px 0;
 
     &__icon {
         margin-right: 2em;
@@ -55,7 +55,7 @@
             li {
                 cursor: pointer;
 
-                &:nth-child(n+2) {
+                &:nth-child(n + 2) {
                     margin: 1em 0;
                 }
             }

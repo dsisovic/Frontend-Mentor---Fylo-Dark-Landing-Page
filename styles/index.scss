@@ -1,11 +1,15 @@
 @import "./partials/variables";
 @import "./partials/button";
+
 @import "./layout/intro";
 @import "./layout/features";
 @import "./layout/productive";
 @import "./layout/opinion";
 @import "./layout/access";
 @import "./layout/footer";
+
+@import "./media-query/media-query-lg.scss";
+@import "./media-query/media-query-md.scss";
 
 * {
     box-sizing: border-box;
